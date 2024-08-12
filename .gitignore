@@ -1,0 +1,43 @@
+# Node modules
+node_modules/
+
+# Debug and VS Code configuration files
+.vscode/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Next.js build output
+.next/
+
+# Next.js static files
+out/
+
+# TypeScript
+*.tsbuildinfo
+
+# Compiled files
+dist/
+build/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Optional npm cache directory
+.npm/
+
+# Yarn
+.yarn/
+.pnp.*

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scientific Calculator</title>
+  <link rel="stylesheet" href="styles/calculator.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <div class="calculator-container">
+    <div id="side-bar">
+      <h1>Wi-Jungle</h1>
+      <h3>Unified Cyber Security Platform</h3>
+      <button>Calculator</button>
+    </div>
+    <div style="flex-grow: 1;" class="calc-cont">
+      <div style="display: flex; justify-content: space-between;">
+        <h2>Calculator</h2>
+        <h2 id="username-display">User: </h2>
+      </div>
+      <div id="calculator">
+        <div class="textarea-container">
+          <textarea id="display" readonly rows="2" placeholder="0"></textarea>
+          <div id="show-history">
+            <i class="fas fa-history"></i>
+          </div>
+        </div>
+        <div class="buttons">
+          <!-- Buttons content -->
+          <button class="btn" data-value="Rad">Rad</button>
+          <button class="btn" data-value="Deg">Deg</button>
+          <button class="btn" data-value="!">x!</button>
+          <button class="btn" data-value="(">(</button>
+          <button class="btn" data-value=")">)</button>
+          <button class="btn" data-value="%">%</button>
+          <button class="btn" data-value="C">C</button>
+
+          <button class="btn" data-value="Inv">Inv</button>
+          <button class="btn" data-value="sin">sin</button>
+          <button class="btn" data-value="ln">ln</button>
+          <button class="btn" data-value="7">7</button>
+          <button class="btn" data-value="8">8</button>
+          <button class="btn" data-value="9">9</button>
+          <button class="btn" data-value="/">/</button>
+
+          <button class="btn" data-value="π">π</button>
+          <button class="btn" data-value="cos">cos</button>
+          <button class="btn" data-value="log">log</button>
+          <button class="btn" data-value="4">4</button>
+          <button class="btn" data-value="5">5</button>
+          <button class="btn" data-value="6">6</button>
+          <button class="btn" data-value="*">*</button>
+
+          <button class="btn" data-value="e">e</button>
+          <button class="btn" data-value="tan">tan</button>
+          <button class="btn" data-value="sqrt">√</button>
+          <button class="btn" data-value="1">1</button>
+          <button class="btn" data-value="2">2</button>
+          <button class="btn" data-value="3">3</button>
+          <button class="btn" data-value="-">-</button>
+
+          <button class="btn" data-value="Ans">Ans</button>
+          <button class="btn" data-value="+/-">±</button>
+          <button class="btn" data-value="EXP">EXP</button>
+          <button class="btn" data-value="0">0</button>
+          <button class="btn" data-value=".">.</button>
+          <button class="btn" data-value="=">=</button>
+          <button class="btn" data-value="+">+</button>
+
+          <button class="btn" data-value="back"><i class="fas fa-backspace"></i></button>
+        </div>
+      </div>
+      <!-- Modal for history -->
+      <div id="history-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>History</h2>
+          <div id="history-content"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="renderer.js"></script>
+</body>
+
+</html>
